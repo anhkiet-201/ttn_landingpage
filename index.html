@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTN HR - Cung Ứng Nhân Lực Việt Trung | Việc Làm Bình Dương - Hồ Chí Minh</title>
+    <meta name="description"
+        content="TTN HR - Đối tác cung ứng nhân lực và tuyển dụng uy tín tại Bình Dương, Hồ Chí Minh. Chuyên cung cấp và tuyển dụng lao động thời vụ, gia công sản xuất, vệ sinh công nghiệp. Kết nối việc làm nhanh chóng, hiệu quả.">
+
+    <!-- Canonical & Robots -->
+    <link rel="canonical" href="https://vieclamhr.com/" />
+    <link rel="alternate" hreflang="vi-VN" href="https://vieclamhr.com/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://vieclamhr.com/?lang=cn" />
+    <link rel="alternate" hreflang="x-default" href="https://vieclamhr.com/" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Font Awesome (Deferred) -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </noscript>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://vieclamhr.com/" />
+    <meta property="og:title" content="TTN HR – Tuyển Dụng & Cung Ứng Nhân Lực Bình Dương | TP.HCM" />
+    <meta property="og:description"
+        content="TTN HR là đơn vị tuyển dụng và cung ứng nhân lực uy tín tại Bình Dương và TP.HCM. Chuyên lao động thời vụ, gia công sản xuất, vệ sinh công nghiệp, kết nối việc làm nhanh chóng." />
+    <meta property="og:image" content="https://vieclamhr.com/ttn-logo.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://vieclamhr.com/" />
+    <meta property="twitter:title" content="TTN HR - Cung Ứng Nhân Lực Việt Trung" />
+    <meta property="twitter:description"
+        content="Đối tác cung ứng nhân lực uy tín tại Bình Dương, Hồ Chí Minh. Kết nối việc làm nhanh chóng." />
+    <meta property="twitter:image" content="ttn-logo.webp" />
+
+    <link rel="shortcut icon" href="ttn-logo.webp" type="image/x-icon">
+
+    <!-- Tailwind CSS (Static - Robust Build) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EmploymentAgency",
+      "@id": "https://vieclamhr.com/#organization",
+      "name": "TTN HR – Tuyển Dụng & Cung Ứng Nhân Lực",
+        "alternateName": [
+            "CÔNG TY TNHH TTN HR",
+            "TTN HR",
+            "HR TTN",
+            "TTN"
+        ],
+        "areaServed": [
+            {
+            "@type": "City",
+            "name": "Bình Dương"
+            },
+            {
+            "@type": "City",
+            "name": "Thành phố Hồ Chí Minh"
+            },
+            {
+                "@type": "City",
+                "name": "Tân Uyên",
+                "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Bình Dương",
+                "addressCountry": "VN"
+                }
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Phường Phú Chánh",
+                "containedInPlace": {
+                "@type": "City",
+                "name": "Tân Uyên",
+                "addressRegion": "Bình Dương"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Khu Công Nghiệp VSIP 2",
+                "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Bình Dương",
+                "addressCountry": "VN"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Khu Công Nghiệp VSIP 2A",
+                "address": {
+                "@type": "PostalAddress",
+                "addressRegion": "Bình Dương",
+                "addressCountry": "VN"
+                }
+            },
+            {
+                "@type": "Place",
+                "name": "Khu Công Nghiệp VSIP 2 Mở Rộng",
+                "description": "Khu vực Vĩnh Tân, Tân Uyên",
+                "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Vĩnh Tân",
+                "addressRegion": "Bình Dương"
+                }
+            }
+        ],
+        "makesOffer": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Cung ứng nhân lực"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                "@type": "Service",
+                "name": "Tuyển dụng nhân sự"
+                }
+            }
+        ],
+      "url": "https://vieclamhr.com",
+      "logo": "https://vieclamhr.com/ttn-logo.webp",
+      "description": "TTN HR - Đối tác cung ứng nhân lực và tuyển dụng uy tín tại Bình Dương, Hồ Chí Minh. Chuyên cung cấp và tuyển dụng lao động thời vụ, gia công sản xuất, vệ sinh công nghiệp. Kết nối việc làm nhanh chóng, hiệu quả.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Đường DB4, Vĩnh Tân",
+        "addressLocality": "Tân Uyên",
+        "addressRegion": "Bình Dương",
+        "addressCountry": "VN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 11.1444095,
+        "longitude": 106.7019746
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+84-844-456-787",
+        "contactType": "customer service",
+        "areaServed": "VN",
+        "availableLanguage": ["Vietnamese", "Chinese"]
+      },
+      "hasMap": "https://maps.app.goo.gl/RWd4A1JszUubM6ddA",
+      "sameAs": [
+        "https://www.facebook.com/61585460484367",
+        "https://www.tiktok.com/@vieclam.ttn.hr",
+        "https://zalo.me/0844456787",
+        "https://www.google.com/maps?cid=8824493389288761795"
+      ]
+    }
+    </script>
+</head>
+
+<body class="bg-gray-50 text-gray-800 overflow-x-hidden">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="fixed w-full z-50 bg-ttnDark/90 backdrop-blur-md text-white shadow-lg transition-all duration-300"
+        id="navbar">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold flex items-center gap-2">
+                <img src="ttn-logo.webp" alt="" class="w-10 h-10 rounded-full object-cover">
+                <span>TTN <span class="text-ttnYellow">HR</span></span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
+                <a href="#about" class="hover:text-ttnYellow transition lang" key="menu_about">Về Chúng Tôi</a>
+                <a href="#message" class="hover:text-ttnYellow transition lang" key="menu_message">Thông Điệp</a>
+                <a href="#services" class="hover:text-ttnYellow transition lang" key="menu_services">Dịch Vụ</a>
+                <a href="#process" class="hover:text-ttnYellow transition lang" key="menu_process">Quy Trình</a>
+                <a href="#contact" class="hover:text-ttnYellow transition lang" key="menu_contact">Liên Hệ</a>
+
+                <button onclick="toggleLanguage()"
+                    class="border border-ttnYellow text-ttnYellow px-4 py-1 rounded-full hover:bg-ttnYellow hover:text-ttnBlue transition font-bold">
+                    <span id="lang-btn-text">VI / 中</span>
+                </button>
+            </div>
+
+            <button id="mobile-menu-btn" class="lg:hidden text-2xl text-ttnYellow" aria-label="Toggle mobile menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-ttnDark/95 border-t border-gray-700 lg:hidden flex-col items-center py-6 gap-6 shadow-xl transition-all duration-300">
+            <a href="#about" class="text-white hover:text-ttnYellow transition text-lg font-medium lang"
+                key="menu_about" onclick="toggleMobileMenu()">Về Chúng Tôi</a>
+            <a href="#message" class="text-white hover:text-ttnYellow transition text-lg font-medium lang"
+                key="menu_message" onclick="toggleMobileMenu()">Thông Điệp</a>
+            <a href="#services" class="text-white hover:text-ttnYellow transition text-lg font-medium lang"
+                key="menu_services" onclick="toggleMobileMenu()">Dịch Vụ</a>
+            <a href="#process" class="text-white hover:text-ttnYellow transition text-lg font-medium lang"
+                key="menu_process" onclick="toggleMobileMenu()">Quy Trình</a>
+            <a href="#contact" class="text-white hover:text-ttnYellow transition text-lg font-medium lang"
+                key="menu_contact" onclick="toggleMobileMenu()">Liên Hệ</a>
+            <button onclick="toggleLanguage(); toggleMobileMenu()"
+                class="border border-ttnYellow text-ttnYellow px-6 py-2 rounded-full hover:bg-ttnYellow hover:text-ttnBlue transition font-bold mt-2">
+                VI / 中
+            </button>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <header class="relative w-full min-h-screen flex items-center justify-center hero-bg text-white pt-20">
+            <div class="absolute top-20 left-10 w-20 h-20 border-4 border-ttnYellow/30 rounded-full animate-bounce">
+            </div>
+            <div class="absolute bottom-20 right-10 w-32 h-32 bg-ttnBlue/50 rounded-lg rotate-12"></div>
+
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10">
+                <div class="reveal active">
+                    <h2 class="text-ttnYellow font-bold text-xl mb-2 lang" key="hero_subtitle">ĐỐI TÁC NHÂN SỰ TIN CẬY
+                    </h2>
+                    <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
+                        <span class="lang" key="hero_title_1">Giải Pháp Nhân Lực</span><br>
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-ttnYellow to-yellow-200 lang"
+                            key="hero_title_2">Toàn Diện & Hiệu Quả</span>
+                    </h1>
+                    <p class="text-lg text-gray-300 mb-8 max-w-lg lang" key="hero_desc">
+                        Kết nối doanh nghiệp với nguồn lao động chất lượng cao. Uy Tín - Chất Lượng - Nhanh Chóng.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#contact"
+                            class="bg-ttnYellow text-ttnBlue px-8 py-3 rounded-lg font-bold hover:bg-white hover:shadow-xl hover:-translate-y-1 transition duration-300 shadow-lg shadow-ttnYellow/20 lang"
+                            key="btn_consult">Nhận Tư Vấn Ngay</a>
+                        <a href="#services"
+                            class="border border-white text-white px-8 py-3 rounded-lg font-bold hover:bg-white/10 transition duration-300 lang"
+                            key="btn_explore">Xem Dịch Vụ</a>
+                    </div>
+                </div>
+                <div class="flex justify-center reveal delay-200">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-ttnYellow blur-3xl opacity-20 rounded-full"></div>
+                        <img src="hero-teamwork.webp" alt="Teamwork"
+                            class="relative rounded-2xl shadow-2xl border-4 border-ttnDark/50 w-full max-w-md object-cover h-96">
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center max-w-3xl mx-auto reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-ttnBlue mb-4 lang" key="about_title">Về Chúng Tôi
+                    </h2>
+                    <div class="w-16 h-1 bg-ttnYellow mx-auto mb-8"></div>
+                    <p class="text-gray-600 text-lg leading-relaxed lang" key="about_content">
+                        Công ty TNHH TTN HR được thành lập với mục tiêu hỗ trợ doanh nghiệp chủ động nguồn lao động,
+                        giảm
+                        thiểu chi phí và đáp ứng kịp thời đơn hàng. Chúng tôi cam kết mang lại sự hài lòng tối đa cho
+                        khách
+                        hàng và phúc lợi tốt nhất cho người lao động.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: THÔNG ĐIỆP CÔNG TY (COMPANY MESSAGE) -->
+        <section id="message" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-ttnBlue text-center mb-12 reveal lang" key="msg_title">
+                    Thông
+                    Điệp Công Ty</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Mission -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-ttnBlue reveal hover:-translate-y-2 transition">
+                        <div class="text-4xl text-ttnYellow mb-4"><i class="fa-solid fa-bullseye"></i></div>
+                        <h3 class="text-xl font-bold mb-3 lang" key="msg_mission_title">Sứ Mệnh</h3>
+                        <p class="text-gray-600 lang" key="msg_mission_desc">Phương châm: "Uy Tín - Chất lượng - Nhanh
+                            chóng". Đội ngũ chuyên sâu, am hiểu Luật Lao Động, phục vụ chuyên nghiệp.</p>
+                    </div>
+                    <!-- Vision -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-ttnYellow reveal delay-100 hover:-translate-y-2 transition">
+                        <div class="text-4xl text-ttnBlue mb-4"><i class="fa-solid fa-eye"></i></div>
+                        <h3 class="text-xl font-bold mb-3 lang" key="msg_vision_title">Tầm Nhìn</h3>
+                        <p class="text-gray-600 lang" key="msg_vision_desc">Đáp ứng kịp thời nguồn nhân lực thời vụ.
+                            Phấn
+                            đấu trở thành thương hiệu vững mạnh về tổ chức.</p>
+                    </div>
+                    <!-- Core Values -->
+                    <div
+                        class="bg-white p-8 rounded-xl shadow-lg border-t-4 border-ttnBlue reveal delay-200 hover:-translate-y-2 transition">
+                        <div class="text-4xl text-ttnYellow mb-4"><i class="fa-solid fa-heart"></i></div>
+                        <h3 class="text-xl font-bold mb-3 lang" key="msg_core_title">Giá Trị Cốt Lõi</h3>
+                        <p class="text-gray-600 lang" key="msg_core_desc">Cầu nối giữa người lao động và doanh nghiệp.
+                            Chú
+                            trọng đội ngũ nhân sự đủ "Tâm" và "Tài".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: CHÍNH SÁCH CHẤT LƯỢNG (QUALITY POLICY) -->
+        <section class="py-20 bg-ttnBlue text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-[url('pattern-cubes.png')] opacity-10">
+            </div>
+            <div class="container mx-auto px-6 relative z-10">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-ttnYellow lang" key="quality_title">
+                    Chính
+                    Sách Chất Lượng</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <!-- For Customers -->
+                    <div class="reveal">
+                        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-user-tie text-ttnYellow"></i> <span class="lang"
+                                key="quality_cust_title">Đối Với Khách Hàng</span>
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check mt-1 text-ttnYellow"></i>
+                                <span class="text-gray-200 lang" key="quality_cust_1">Chất lượng lao động được quản lý
+                                    đánh
+                                    giá theo quy trình khép kín.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check mt-1 text-ttnYellow"></i>
+                                <span class="text-gray-200 lang" key="quality_cust_2">Chịu trách nhiệm chi trả lương và
+                                    chế
+                                    độ trong quá trình cung cấp.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check mt-1 text-ttnYellow"></i>
+                                <span class="text-gray-200 lang" key="quality_cust_3">Luôn lắng nghe và đáp ứng tối đa
+                                    nhu
+                                    cầu của khách hàng.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- For Employees -->
+                    <div class="reveal delay-200">
+                        <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                            <i class="fa-solid fa-users text-ttnYellow"></i> <span class="lang"
+                                key="quality_emp_title">Đối
+                                Với CBNV</span>
+                        </h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check mt-1 text-ttnYellow"></i>
+                                <span class="text-gray-200 lang" key="quality_emp_1">Đảm bảo đúng quy luật lao
+                                    động.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check mt-1 text-ttnYellow"></i>
+                                <span class="text-gray-200 lang" key="quality_emp_2">Chế độ phúc lợi xã hội cho nhân
+                                    viên
+                                    gắn bó lâu dài.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <i class="fa-solid fa-check mt-1 text-ttnYellow"></i>
+                                <span class="text-gray-200 lang" key="quality_emp_3">Môi trường công bằng, minh bạch, cơ
+                                    hội
+                                    phát triển.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: ĐỊNH HƯỚNG PHÁT TRIỂN (DEVELOPMENT ORIENTATION) -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-ttnBlue text-center mb-12 reveal lang" key="dev_title">
+                    Định
+                    Hướng Phát Triển</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <div
+                        class="p-6 bg-blue-50 rounded-xl text-center hover:bg-ttnYellow hover:text-ttnBlue transition duration-300 group reveal">
+                        <div class="text-4xl text-ttnBlue mb-3 group-hover:text-white"><i
+                                class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="font-bold lang" key="dev_1">An Toàn - Nhanh Chóng</h3>
+                    </div>
+                    <div
+                        class="p-6 bg-blue-50 rounded-xl text-center hover:bg-ttnYellow hover:text-ttnBlue transition duration-300 group reveal delay-100">
+                        <div class="text-4xl text-ttnBlue mb-3 group-hover:text-white"><i
+                                class="fa-solid fa-user-lock"></i>
+                        </div>
+                        <h3 class="font-bold lang" key="dev_2">Bảo Mật Thông Tin</h3>
+                    </div>
+                    <div
+                        class="p-6 bg-blue-50 rounded-xl text-center hover:bg-ttnYellow hover:text-ttnBlue transition duration-300 group reveal delay-200">
+                        <div class="text-4xl text-ttnBlue mb-3 group-hover:text-white"><i
+                                class="fa-solid fa-headphones-simple"></i></div>
+                        <h3 class="font-bold lang" key="dev_3">Lắng Nghe Khách Hàng</h3>
+                    </div>
+                    <div
+                        class="p-6 bg-blue-50 rounded-xl text-center hover:bg-ttnYellow hover:text-ttnBlue transition duration-300 group reveal delay-300">
+                        <div class="text-4xl text-ttnBlue mb-3 group-hover:text-white"><i
+                                class="fa-solid fa-hand-holding-heart"></i></div>
+                        <h3 class="font-bold lang" key="dev_4">Luôn Giữ Chữ Tín</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION (Existing) -->
+        <section id="services" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-ttnBlue text-center mb-16 reveal lang"
+                    key="service_title">
+                    Lĩnh Vực Hoạt Động</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div
+                        class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 border-b-4 border-ttnYellow reveal">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-ttnBlue text-3xl mb-6">
+                            <i class="fa-solid fa-broom"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 lang" key="srv_1_title">Dịch Vụ Vệ Sinh</h3>
+                        <p class="text-gray-600 lang" key="srv_1_desc">Cung cấp nhân viên tạp vụ, vệ sinh văn phòng, nhà
+                            xưởng chuyên nghiệp, sạch sẽ.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div
+                        class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 border-b-4 border-ttnYellow reveal delay-100">
+                        <div
+                            class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center text-ttnYellow text-3xl mb-6">
+                            <i class="fa-solid fa-industry"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 lang" key="srv_2_title">Gia Công Sản Xuất</h3>
+                        <p class="text-gray-600 lang" key="srv_2_desc">Nhận gia công đóng gói, dệt may, giày da, điện tử
+                            theo đơn giá khoán sản phẩm.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div
+                        class="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition duration-300 border-b-4 border-ttnYellow reveal delay-200">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-ttnBlue text-3xl mb-6">
+                            <i class="fa-solid fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 lang" key="srv_3_title">Cung Ứng Lao Động</h3>
+                        <p class="text-gray-600 lang" key="srv_3_desc">Cung cấp và quản lý nguồn lao động số lượng lớn,
+                            thời
+                            vụ hoặc dài hạn cho doanh nghiệp.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEW SECTION: QUY TRÌNH TUYỂN DỤNG (RECRUITMENT PROCESS) -->
+        <section id="process" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl md:text-4xl font-bold text-ttnBlue text-center mb-16 reveal lang"
+                    key="process_title">
+                    Quy Trình Tuyển Dụng & Đào Tạo</h2>
+
+                <!-- Timeline Layout -->
+                <div class="relative timeline-line">
+                    <!-- Step 1 -->
+                    <div class="mb-12 flex flex-col md:flex-row items-center justify-between w-full reveal">
+                        <div class="order-1 w-full md:w-5/12 md:text-right px-4">
+                            <h3 class="font-bold text-xl text-ttnBlue lang" key="step_1_title">Hồ Sơ & Tiêu Chuẩn</h3>
+                            <p class="text-gray-600 text-sm mt-2 lang" key="step_1_desc">Lý lịch rõ ràng, giấy khám sức
+                                khỏe, bằng cấp. Tuổi từ 18+, tác phong chững chạc, đạo đức tốt.</p>
+                        </div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-ttnYellow w-10 h-10 rounded-full justify-center text-white font-bold border-4 border-white shadow-lg">
+                            1</div>
+                        <div class="order-1 w-full md:w-5/12 px-4"></div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="mb-12 flex flex-col md:flex-row items-center justify-between w-full reveal delay-100">
+                        <div class="order-1 w-full md:w-5/12 px-4"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-ttnBlue w-10 h-10 rounded-full justify-center text-white font-bold border-4 border-white shadow-lg">
+                            2</div>
+                        <div class="order-1 w-full md:w-5/12 px-4">
+                            <h3 class="font-bold text-xl text-ttnBlue lang" key="step_2_title">Sơ Tuyển Vòng 1</h3>
+                            <p class="text-gray-600 text-sm mt-2 lang" key="step_2_desc">Kiểm tra hồ sơ, xác minh lý
+                                lịch,
+                                tư vấn và đưa ra yêu cầu ngành nghề phù hợp.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="mb-12 flex flex-col md:flex-row items-center justify-between w-full reveal delay-200">
+                        <div class="order-1 w-full md:w-5/12 md:text-right px-4">
+                            <h3 class="font-bold text-xl text-ttnBlue lang" key="step_3_title">Sơ Tuyển Vòng 2</h3>
+                            <p class="text-gray-600 text-sm mt-2 lang" key="step_3_desc">Phỏng vấn trực tiếp về nhận
+                                thức,
+                                kiến thức, khả năng và tố chất cho từng công việc.</p>
+                        </div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-ttnYellow w-10 h-10 rounded-full justify-center text-white font-bold border-4 border-white shadow-lg">
+                            3</div>
+                        <div class="order-1 w-full md:w-5/12 px-4"></div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center justify-between w-full reveal delay-300">
+                        <div class="order-1 w-full md:w-5/12 px-4"></div>
+                        <div
+                            class="z-20 flex items-center order-1 bg-ttnBlue w-10 h-10 rounded-full justify-center text-white font-bold border-4 border-white shadow-lg">
+                            4</div>
+                        <div class="order-1 w-full md:w-5/12 px-4">
+                            <h3 class="font-bold text-xl text-ttnBlue lang" key="step_4_title">Đào Tạo & Ký Kết</h3>
+                            <p class="text-gray-600 text-sm mt-2 lang" key="step_4_desc">Làm công tác tư tưởng trước khi
+                                nhận việc. Ứng viên đạt yêu cầu sẽ ký kết thủ tục làm việc.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CLIENTS LIST -->
+        <section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-2xl font-bold text-center text-gray-500 mb-10 uppercase tracking-widest lang"
+                    key="client_title">Khách Hàng Tiêu Biểu</h2>
+                <div
+                    class="flex flex-wrap justify-center gap-8 opacity-70 grayscale hover:grayscale-0 transition duration-500">
+                    <div class="text-xl font-bold text-ttnBlue border-2 border-gray-200 px-4 py-2 rounded">ROCHDALE
+                        SPEARS
+                    </div>
+                    <div class="text-xl font-bold text-ttnBlue border-2 border-gray-200 px-4 py-2 rounded">MAVI CIE
+                    </div>
+                    <div class="text-xl font-bold text-ttnBlue border-2 border-gray-200 px-4 py-2 rounded">TCL VIETNAM
+                    </div>
+                    <div class="text-xl font-bold text-ttnBlue border-2 border-gray-200 px-4 py-2 rounded">TEKCOM</div>
+                    <div class="text-xl font-bold text-ttnBlue border-2 border-gray-200 px-4 py-2 rounded">NIDEC</div>
+                    <div class="text-xl font-bold text-ttnBlue border-2 border-gray-200 px-4 py-2 rounded">SAGASIKI
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="py-20 bg-gray-900 text-white">
+            <div class="container mx-auto px-6">
+                <div class="reveal">
+                    <div class="text-center max-w-3xl mx-auto mb-12">
+                        <h2 class="text-3xl font-bold text-ttnYellow mb-6 lang" key="contact_title">Liên Hệ Với Chúng
+                            Tôi
+                        </h2>
+                        <p class="text-gray-400 lang" key="contact_desc">Hãy để lại thông tin, chúng tôi sẽ liên hệ lại
+                            ngay
+                            lập tức để tư vấn giải pháp nhân sự cho quý doanh nghiệp.</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        <!-- Address -->
+                        <a href="https://maps.google.com/?q=TTN+HR+-+Vsip+2A" target="_blank"
+                            class="flex flex-col items-center text-center p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition">
+                            <div
+                                class="w-12 h-12 bg-ttnBlue rounded-full flex items-center justify-center text-ttnYellow text-xl mb-4">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <h3 class="font-bold mb-2 lang" key="address_label">Địa chỉ</h3>
+                            <p class="text-sm text-gray-400 lang" key="address_val">Đường DB4, Vĩnh Tân, Tân Uyên, Bình
+                                Dương</p>
+                        </a>
+
+                        <!-- Hotline -->
+                        <a href="tel:0844456787"
+                            class="flex flex-col items-center text-center p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition">
+                            <div
+                                class="w-12 h-12 bg-ttnBlue rounded-full flex items-center justify-center text-ttnYellow text-xl mb-4">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h3 class="font-bold mb-2">Hotline</h3>
+                            <p class="text-sm text-gray-400">0844 456 787</p>
+                        </a>
+
+                        <!-- Email -->
+                        <a href="mailto:hrlongtuyendung@gmail.com"
+                            class="flex flex-col items-center text-center p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition">
+                            <div
+                                class="w-12 h-12 bg-ttnBlue rounded-full flex items-center justify-center text-ttnYellow text-xl mb-4">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <h3 class="font-bold mb-2">Email</h3>
+                            <p class="text-sm text-gray-400">hrlongtuyendung@gmail.com</p>
+                        </a>
+
+                        <!-- Social -->
+                        <div
+                            class="flex flex-col items-center text-center p-4 bg-gray-800 rounded-xl hover:bg-gray-700 transition">
+                            <div
+                                class="w-12 h-12 bg-ttnBlue rounded-full flex items-center justify-center text-ttnYellow text-xl mb-4">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </div>
+                            <h3 class="font-bold mb-2 lang" key="social_title">Mạng Xã Hội</h3>
+                            <div class="flex items-center gap-6 mt-2">
+                                <a href="https://www.facebook.com/61585460484367" target="_blank"
+                                    class="text-gray-400 hover:text-blue-500 transition text-3xl"
+                                    aria-label="Facebook Fanpage">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@vieclam.ttn.hr" target="_blank"
+                                    class="text-gray-400 hover:text-white transition text-3xl"
+                                    aria-label="TikTok Channel">
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </a>
+                                <a href="https://zalo.me/0844456787" target="_blank"
+                                    class="text-gray-400 hover:text-blue-500 transition text-xl font-bold border-2 border-gray-600 hover:border-blue-500 px-3 py-1 rounded-lg">
+                                    Zalo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Google map -->
+                    <div
+                        class="mt-12 w-full h-[400px] bg-gray-800 rounded-xl overflow-hidden shadow-lg border border-gray-700">
+                        <iframe title="Bản đồ địa chỉ công ty TTN HR"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3914.582903453013!2d106.70197457584126!3d11.144409452296795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174c939b66fc887%3A0x7a76e5fbbf56e9c3!2sTTN%20HR%20-%20Vsip%202A!5e0!3m2!1svi!2s!4v1766040674752!5m2!1svi!2s"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+
+                </div>
+            </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <!-- Col 1: Brand -->
+            <div>
+                <a href="#" class="text-2xl font-bold flex items-center gap-2 text-white mb-4">
+                    <img src="ttn-logo.webp" alt="" class="w-10 h-10 rounded-full object-cover">
+                    <span>TTN <span class="text-ttnYellow">HR</span></span>
+                </a>
+                <p class="text-sm mb-4 lang" key="footer_desc">Đối tác nhân sự tin cậy của bạn. Cung cấp giải pháp nhân
+                    lực toàn diện và hiệu quả.</p>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div>
+                <h4 class="text-white font-bold text-lg mb-4 lang" key="footer_links">Liên Kết Nhanh</h4>
+                <ul class="space-y-2">
+                    <li><a href="#about" class="hover:text-ttnYellow transition lang" key="menu_about">Về Chúng Tôi</a>
+                    </li>
+                    <li><a href="#services" class="hover:text-ttnYellow transition lang" key="menu_services">Dịch Vụ</a>
+                    </li>
+                    <li><a href="#process" class="hover:text-ttnYellow transition lang" key="menu_process">Quy Trình</a>
+                    </li>
+                    <li><a href="#contact" class="hover:text-ttnYellow transition lang" key="menu_contact">Liên Hệ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Policies / Extra -->
+            <!-- <div>
+                <h4 class="text-white font-bold text-lg mb-4 lang" key="footer_policy">Chính Sách</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-ttnYellow transition lang" key="policy_security">Bảo Mật Thông
+                            Tin</a></li>
+                    <li><a href="#" class="hover:text-ttnYellow transition lang" key="policy_term">Điều Khoản Sử
+                            Dụng</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <div class="container mx-auto px-6 mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; 2024 CÔNG TY TNHH TTN HR. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <a href="#contact"
+        class="fixed bottom-8 right-8 z-50 bg-red-600 text-white px-6 py-3 rounded-full shadow-2xl font-bold flex items-center gap-3 hover:scale-110 transition transform animate-bounce shadow-red-600/50 border-4 border-white">
+        <i class="fa-solid fa-phone-volume text-xl"></i>
+        <span class="lang" key="btn_floating_contact">Liên hệ ngay</span>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        const translations = {
+            vi: {
+                menu_about: "Về Chúng Tôi",
+                menu_message: "Thông Điệp",
+                menu_services: "Dịch Vụ",
+                menu_process: "Quy Trình",
+                menu_contact: "Liên Hệ",
+
+                hero_subtitle: "ĐỐI TÁC NHÂN SỰ TIN CẬY",
+                hero_title_1: "Giải Pháp Nhân Lực",
+                hero_title_2: "Toàn Diện & Hiệu Quả",
+                hero_desc: "Kết nối doanh nghiệp với nguồn lao động chất lượng cao. Uy Tín - Chất Lượng - Nhanh Chóng.",
+                btn_consult: "Nhận Tư Vấn Ngay",
+                btn_explore: "Xem Dịch Vụ",
+
+                about_title: "Về Chúng Tôi",
+                about_content: "Công ty TNHH TTN HR được thành lập với mục tiêu hỗ trợ doanh nghiệp chủ động nguồn lao động, giảm thiểu chi phí và đáp ứng kịp thời đơn hàng. Chúng tôi cam kết mang lại sự hài lòng tối đa cho khách hàng và phúc lợi tốt nhất cho người lao động.",
+
+                // --- NEW: MESSAGE ---
+                msg_title: "Thông Điệp Công Ty",
+                msg_mission_title: "Sứ Mệnh",
+                msg_mission_desc: "Phương châm: 'Uy Tín - Chất lượng - Nhanh chóng'. Đội ngũ chuyên sâu, am hiểu Luật Lao Động, phục vụ chuyên nghiệp.",
+                msg_vision_title: "Tầm Nhìn",
+                msg_vision_desc: "Đáp ứng kịp thời nguồn nhân lực thời vụ. Phấn đấu trở thành thương hiệu vững mạnh về tổ chức.",
+                msg_core_title: "Giá Trị Cốt Lõi",
+                msg_core_desc: "Cầu nối giữa người lao động và doanh nghiệp. Chú trọng đội ngũ nhân sự đủ 'Tâm' và 'Tài'.",
+
+                // --- NEW: QUALITY POLICY ---
+                quality_title: "Chính Sách Chất Lượng",
+                quality_cust_title: "Đối Với Khách Hàng",
+                quality_cust_1: "Chất lượng lao động được quản lý đánh giá theo quy trình khép kín.",
+                quality_cust_2: "Chịu trách nhiệm chi trả lương và chế độ trong quá trình cung cấp.",
+                quality_cust_3: "Luôn lắng nghe và đáp ứng tối đa nhu cầu của khách hàng.",
+                quality_emp_title: "Đối Với CBNV",
+                quality_emp_1: "Đảm bảo đúng quy luật lao động.",
+                quality_emp_2: "Chế độ phúc lợi xã hội cho nhân viên gắn bó lâu dài.",
+                quality_emp_3: "Môi trường công bằng, minh bạch, cơ hội phát triển.",
+
+                // --- NEW: DEVELOPMENT ---
+                dev_title: "Định Hướng Phát Triển",
+                dev_1: "An Toàn - Nhanh Chóng",
+                dev_2: "Bảo Mật Thông Tin",
+                dev_3: "Lắng Nghe Khách Hàng",
+                dev_4: "Luôn Giữ Chữ Tín",
+
+                service_title: "Lĩnh Vực Hoạt Động",
+                srv_1_title: "Dịch Vụ Vệ Sinh",
+                srv_1_desc: "Cung cấp nhân viên tạp vụ, vệ sinh văn phòng, nhà xưởng chuyên nghiệp, sạch sẽ.",
+                srv_2_title: "Gia Công Sản Xuất",
+                srv_2_desc: "Nhận gia công đóng gói, dệt may, giày da, điện tử theo đơn giá khoán sản phẩm.",
+                srv_3_title: "Cung Ứng Lao Động",
+                srv_3_desc: "Cung cấp và quản lý nguồn lao động số lượng lớn, thời vụ hoặc dài hạn cho doanh nghiệp.",
+
+                // --- NEW: PROCESS ---
+                process_title: "Quy Trình Tuyển Dụng & Đào Tạo",
+                step_1_title: "Hồ Sơ & Tiêu Chuẩn",
+                step_1_desc: "Lý lịch rõ ràng, giấy khám sức khỏe, bằng cấp. Tuổi từ 18+, tác phong chững chạc, đạo đức tốt.",
+                step_2_title: "Sơ Tuyển Vòng 1",
+                step_2_desc: "Kiểm tra hồ sơ, xác minh lý lịch, tư vấn và đưa ra yêu cầu ngành nghề phù hợp.",
+                step_3_title: "Sơ Tuyển Vòng 2",
+                step_3_desc: "Phỏng vấn trực tiếp về nhận thức, kiến thức, khả năng và tố chất cho từng công việc.",
+                step_4_title: "Đào Tạo & Ký Kết",
+                step_4_desc: "Làm công tác tư tưởng trước khi nhận việc. Ứng viên đạt yêu cầu sẽ ký kết thủ tục làm việc.",
+
+                client_title: "Khách Hàng Tiêu Biểu",
+                contact_title: "Liên Hệ Với Chúng Tôi",
+                contact_desc: "Hãy để lại thông tin, chúng tôi sẽ liên hệ lại ngay lập tức để tư vấn giải pháp nhân sự cho quý doanh nghiệp.",
+                address_label: "Địa chỉ",
+                address_val: "Đường DB4, Vĩnh Tân, Tân Uyên, Bình Dương",
+                form_name: "Tên Doanh Nghiệp / Cá Nhân",
+                form_phone: "Số Điện Thoại",
+                form_msg: "Nội dung cần tư vấn",
+                form_btn: "GỬI THÔNG TIN",
+                social_title: "Mạng Xã Hội",
+                btn_floating_contact: "Liên hệ ngay",
+                footer_desc: "Đối tác nhân sự tin cậy của bạn. Cung cấp giải pháp nhân lực toàn diện và hiệu quả.",
+                footer_links: "Liên Kết Nhanh",
+                footer_policy: "Chính Sách",
+                policy_security: "Bảo Mật Thông Tin",
+                policy_term: "Điều Khoản Sử Dụng"
+            },
+            cn: {
+                menu_about: "关于我们",
+                menu_message: "公司讯息",
+                menu_services: "服务项目",
+                menu_process: "流程",
+                menu_contact: "联系我们",
+
+                hero_subtitle: "值得信赖的人力资源合作伙伴",
+                hero_title_1: "全面高效的",
+                hero_title_2: "人力资源解决方案",
+                hero_desc: "连接企业与高质量劳动力。信誉 - 质量 - 快速。",
+                btn_consult: "立即咨询",
+                btn_explore: "查看服务",
+
+                about_title: "关于我们",
+                about_content: "TTN人力资源有限公司成立的目标是支持企业主动寻找劳动力资源，降低成本并及时满足订单需求。我们致力于为客户带来最大的满意度，并为员工提供最好的福利。",
+
+                // --- NEW: MESSAGE ---
+                msg_title: "公司讯息",
+                msg_mission_title: "使命",
+                msg_mission_desc: "座右铭：“信誉 - 质量 - 快速”。我们拥有一支训练有素的专业知识和劳动法知识的员工团队。",
+                msg_vision_title: "愿景",
+                msg_vision_desc: "旨在及时满足季节性人力资源。公司力求在组织和品牌上日益强大。",
+                msg_core_title: "核心价值观",
+                msg_core_desc: "作为工人与企业之间的桥梁。始终关注“心”与“才”并重的员工。",
+
+                // --- NEW: QUALITY POLICY ---
+                quality_title: "质量方针",
+                quality_cust_title: "对于客户",
+                quality_cust_1: "劳工质量根据封闭流程进行管理和评估。",
+                quality_cust_2: "负责在供应过程中支付工资和员工福利。",
+                quality_cust_3: "始终倾听并最大化客户需求。",
+                quality_emp_title: "对于员工",
+                quality_emp_1: "确保遵守劳动法。",
+                quality_emp_2: "有针对长期员工的社会福利制度。",
+                quality_emp_3: "创造公平、透明的工作环境，提供发展机会。",
+
+                // --- NEW: DEVELOPMENT ---
+                dev_title: "发展定位",
+                dev_1: "安全 - 快速",
+                dev_2: "信息保密",
+                dev_3: "倾听客户",
+                dev_4: "保持信誉",
+
+                service_title: "经营领域",
+                srv_1_title: "清洁服务",
+                srv_1_desc: "提供清洁人员、办公室及工厂清洁服务，专业、整洁。",
+                srv_2_title: "生产加工",
+                srv_2_desc: "接受加工（按产品单价计），包括纺织、鞋业、电子、包装等行业。",
+                srv_3_title: "劳动力供应",
+                srv_3_desc: "根据企业需求，提供并管理大量短期或长期的劳动力资源。",
+
+                // --- NEW: PROCESS ---
+                process_title: "招聘和培训流程",
+                step_1_title: "档案与标准",
+                step_1_desc: "背景清晰，健康证明，文凭。18岁以上，成熟，行为敏捷，品德良好。",
+                step_2_title: "预赛第一轮",
+                step_2_desc: "检查文件，核实背景，提供建议并制定行业要求。",
+                step_3_title: "预赛第二轮",
+                step_3_desc: "直接面试认知、知识、能力和每项工作的素质。",
+                step_4_title: "培训与签约",
+                step_4_desc: "在上班前进行思想工作。符合要求的候选人将签署工作手续。",
+
+                client_title: "典型客户",
+                contact_title: "联系我们",
+                contact_desc: "请留下信息，我们将立即联系为您提供企业人力资源解决方案。",
+                address_label: "地址",
+                address_val: "平阳省，新渊市，永新坊，DB4路",
+                form_name: "企业/个人名称",
+                form_phone: "电话号码",
+                form_msg: "咨询内容",
+                form_btn: "发送信息",
+                social_title: "社交媒体",
+                btn_floating_contact: "立即联系",
+                footer_desc: "您值得信赖的人力资源合作伙伴。提供全面高效的人力资源解决方案。",
+                footer_links: "快速链接",
+                footer_policy: "政策",
+                policy_security: "信息安全",
+                policy_term: "使用条款"
+            }
+        };
+
+        let currentLang = 'vi';
+
+        function updateContent() {
+            const elements = document.querySelectorAll('.lang');
+            elements.forEach(el => {
+                const key = el.getAttribute('key');
+                if (translations[currentLang][key]) {
+                    el.style.opacity = 0;
+                    setTimeout(() => {
+                        el.innerText = translations[currentLang][key];
+                        el.style.opacity = 1;
+                    }, 200);
+                }
+            });
+            document.body.style.fontFamily = currentLang === 'cn' ? "'Noto Sans SC', sans-serif" : "'Roboto', 'Roboto-fallback', sans-serif";
+
+            // Update URL
+            const newUrl = currentLang === 'cn' ? '?lang=cn' : 'index.html';
+            window.history.pushState({ path: newUrl }, '', newUrl);
+        }
+
+        function toggleLanguage() {
+            currentLang = currentLang === 'vi' ? 'cn' : 'vi';
+            updateContent();
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check URL param
+            const urlParams = new URLSearchParams(window.location.search);
+            const langParam = urlParams.get('lang');
+            if (langParam === 'cn' || langParam === 'zh') {
+                currentLang = 'cn';
+                updateContent();
+            }
+
+            const reveals = document.querySelectorAll('.reveal');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                    }
+                });
+            }, { threshold: 0.1 });
+            reveals.forEach((el) => observer.observe(el));
+        });
+
+        // Scroll Handler with requestAnimationFrame to avoid Forced Reflow
+        const navbar = document.getElementById('navbar');
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+
+        function updateNavbar() {
+            if (window.scrollY > 50) {
+                if (!navbar.classList.contains('shadow-lg')) {
+                    navbar.classList.add('shadow-lg', 'bg-ttnDark/95');
+                    navbar.classList.remove('bg-ttnDark/90');
+                }
+            } else {
+                if (navbar.classList.contains('shadow-lg')) {
+                    navbar.classList.remove('shadow-lg', 'bg-ttnDark/95');
+                    navbar.classList.add('bg-ttnDark/90');
+                }
+            }
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', () => {
+            lastScrollY = window.scrollY;
+            if (!ticking) {
+                window.requestAnimationFrame(updateNavbar);
+                ticking = true;
+            }
+        });
+
+        // Mobile Menu Toggle
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        function toggleMobileMenu() {
+            if (mobileMenu.classList.contains('hidden')) {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+                mobileBtn.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+            } else {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+                mobileBtn.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            }
+        }
+
+        mobileBtn.addEventListener('click', toggleMobileMenu);
+    </script>
+</body>
+
+</html>
