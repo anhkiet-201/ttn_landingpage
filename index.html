@@ -50,56 +50,98 @@
     <link rel="stylesheet" href="styles.css">
 
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
+    [
+      {
+        "@context": "https://schema.org",
         "@type": "WebSite",
         "@id": "https://vieclamhr.com/#website",
         "url": "https://vieclamhr.com/",
         "name": "TTN HR",
-        "alternateName": ["Việt Làm HR", "TTN Human Resources"],
-        "description": "Cổng thông tin tuyển dụng và cung ứng nhân lực uy tín tại Bình Dương.",
-        "publisher": {
-            "@id": "https://vieclamhr.com/#organization"
-        }
-        },
-        {
+        "alternateName": [
+          "Việc Làm HR",
+          "TTN Human Resources",
+          "TTN HR Bình Dương",
+          "Tuyển dụng TTN"
+        ],
+        "description": "Cổng thông tin tuyển dụng và cung ứng nhân lực uy tín tại Bình Dương. Hỗ trợ tìm việc làm nhanh, lương cao.",
+        "potentialAction": [
+          {
+            "@type": "SearchAction",
+            "name": "Tìm việc làm",
+            "description": "Tìm việc làm lao động phổ thông, thời vụ tại Bình Dương, TP.HCM",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://vieclamhr.com/#services"
+            },
+            "query-input": "required name=search_term_string"
+          },
+          {
+            "@type": "RegisterAction",
+            "name": "Liên hệ tuyển dụng",
+            "description": "Đăng ký nhận tư vấn cung ứng nhân lực hoặc ứng tuyển việc làm",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://vieclamhr.com/#contact"
+            }
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org",
         "@type": "EmploymentAgency",
         "@id": "https://vieclamhr.com/#organization",
         "name": "TTN HR – Tuyển Dụng & Cung Ứng Nhân Lực",
+        "alternateName": [
+          "CÔNG TY TNHH TTN HR",
+          "TTN HR",
+          "HR TTN"
+        ],
+        "legalName": "CÔNG TY TNHH TTN HR",
         "url": "https://vieclamhr.com/",
         "logo": "https://vieclamhr.com/ttn-logo.webp",
         "image": "https://vieclamhr.com/ttn-logo.webp",
-        "description": "TTN HR - Cổng thông tin tìm việc làm và cung ứng lao động lớn nhất tại Bình Dương, Hồ Chí Minh. Chuyên cung cấp lao động phổ thông, thời vụ, gia công sản xuất tại các KCN VSIP, Tân Uyên.",
-        "alternateName": [
-            "CÔNG TY TNHH TTN HR",
-            "TTN HR",
-            "HR TTN",
-            "TTN"
+        "description": "TTN HR - Đối tác tin cậy về cung ứng lao động phổ thông và tuyển dụng tại Bình Dương, Hồ Chí Minh. Chuyên cung cấp lao động thời vụ, gia công sản xuất, vệ sinh công nghiệp tại các KCN VSIP, Tân Uyên.",
+        "slogan": "Đối tác nhân sự tin cậy - Giải pháp toàn diện",
+        "keywords": "tìm việc, việc làm, lao động phổ thông, cung ứng nhân lực, tuyển dụng, việc làm bình dương",
+        "knowsAbout": [
+            {
+                "@type": "Thing",
+                "name": "Cung ứng nhân lực",
+                "url": "https://www.wikidata.org/wiki/Q1056396"
+            },
+            {
+                "@type": "Thing",
+                "name": "Tuyển dụng",
+                "url": "https://www.wikidata.org/wiki/Q899277"
+            },
+            {
+                "@type": "Thing",
+                "name": "Lao động phổ thông"
+            }
         ],
         "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Đường DB4, Vĩnh Tân",
-            "addressLocality": "Tân Uyên",
-            "addressRegion": "Bình Dương",
-            "addressCountry": "VN"
+          "@type": "PostalAddress",
+          "streetAddress": "Đường DB4, Vĩnh Tân",
+          "addressLocality": "Tân Uyên",
+          "addressRegion": "Bình Dương",
+          "postalCode": "82000",
+          "addressCountry": "VN"
         },
         "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 11.1444095,
-            "longitude": 106.7019746
+          "@type": "GeoCoordinates",
+          "latitude": 11.1444095,
+          "longitude": 106.7019746
         },
         "areaServed": [
-            {
+          {
             "@type": "City",
             "name": "Bình Dương"
-            },
-            {
+          },
+          {
             "@type": "City",
             "name": "Thành phố Hồ Chí Minh"
-            },
-            {
+          },
+          {
             "@type": "City",
             "name": "Tân Uyên",
             "address": {
@@ -107,77 +149,36 @@
                 "addressRegion": "Bình Dương",
                 "addressCountry": "VN"
             }
-            },
-            {
-            "@type": "AdministrativeArea",
-            "name": "Phường Phú Chánh",
-            "containedInPlace": {
-                "@type": "City",
-                "name": "Tân Uyên"
-            }
-            },
-            {
-            "@type": "Place",
-            "name": "Khu Công Nghiệp VSIP 2",
-            "address": {
-                "@type": "PostalAddress",
-                "addressRegion": "Bình Dương"
-            }
-            },
-            {
-            "@type": "Place",
-            "name": "Khu Công Nghiệp VSIP 2A"
-            },
-            {
-            "@type": "Place",
-            "name": "Khu Công Nghiệp VSIP 2 Mở Rộng"
-            }
+          }
         ],
-        "makesOffer": [
-            {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "Service",
-                "name": "Cung ứng nhân lực"
-            }
-            },
-            {
-            "@type": "Offer",
-            "itemOffered": {
-                "@type": "Service",
-                "name": "Tuyển dụng nhân sự"
-            }
-            }
-        ],
-        "openingHoursSpecification": {
-            "@type": "OpeningHoursSpecification",
-            "dayOfWeek": [
-            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
-            ],
-            "opens": "08:00",
-            "closes": "17:00"
-        },
         "contactPoint": {
-            "@type": "ContactPoint",
-            "telephone": "+84-844-456-787",
-            "contactType": "customer service",
-            "areaServed": "VN",
-            "availableLanguage": ["Vietnamese", "Chinese"]
+          "@type": "ContactPoint",
+          "telephone": "+84-844-456-787",
+          "email": "hrlongtuyendung@gmail.com",
+          "contactType": "customer service",
+          "areaServed": {
+            "@type": "AdministrativeArea",
+            "name": "Việt Nam"
+          },
+          "availableLanguage": ["Vietnamese", "Chinese"]
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
         },
         "sameAs": [
-            "https://www.facebook.com/61585460484367",
-            "https://www.tiktok.com/@vieclam.ttn.hr",
-            "https://zalo.me/0844456787"
-        ]
-        }
+          "https://www.facebook.com/61585460484367",
+          "https://www.tiktok.com/@vieclam.ttn.hr",
+          "https://zalo.me/0844456787",
+          "https://www.google.com/maps?cid=8824493389288761795"
+        ],
+        "hasMap": "https://maps.app.goo.gl/RWd4A1JszUubM6ddA"
+      }
     ]
-
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 11.1444095,
-        "longitude": 106.7019746
-      },
-      "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
           "Monday",
