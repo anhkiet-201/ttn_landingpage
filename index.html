@@ -71,12 +71,17 @@
           {
             "@type": "SearchAction",
             "name": "Tìm việc làm",
-            "description": "Tìm việc làm lao động phổ thông, thời vụ tại Bình Dương, TP.HCM",
+            "description": "Tìm kiếm việc làm tại cổng thông tin tuyển dụng TTN HR",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://vieclamhr.com/#services"
+              "urlTemplate": "https://timviec.vieclamhr.com/jobs?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
+          },
+          {
+            "@type": "ViewAction",
+            "name": "Xem danh sách việc làm",
+            "target": "https://timviec.vieclamhr.com/"
           },
           {
             "@type": "RegisterAction",
@@ -105,7 +110,7 @@
         "url": "https://vieclamhr.com/",
         "logo": "https://vieclamhr.com/ttn-logo.webp",
         "image": "https://vieclamhr.com/ttn-logo.webp",
-        "description": "TTN HR - Đối tác tin cậy về cung ứng lao động phổ thông và tuyển dụng tại Bình Dương, Hồ Chí Minh. Chuyên cung cấp lao động thời vụ, gia công sản xuất, vệ sinh công nghiệp tại các KCN VSIP, Tân Uyên.",
+        "description": "TTN HR - Đối tác tin cậy về cung ứng lao động phổ thông và tuyển dụng tại Bình Dương, Hồ Chí Minh. Truy cập https://timviec.vieclamhr.com để xem cơ hội việc làm mới nhất.",
         "slogan": "Đối tác nhân sự tin cậy - Giải pháp toàn diện",
         "keywords": "tìm việc, việc làm, lao động phổ thông, cung ứng nhân lực, tuyển dụng, việc làm bình dương, Việc làm KCN, Việc làm Vsip",
         "knowsAbout": [
@@ -192,10 +197,17 @@
     <nav class="fixed w-full z-50 bg-ttnDark/90 backdrop-blur-md text-white shadow-lg transition-all duration-300"
         id="navbar">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-2xl font-bold flex items-center gap-2">
-                <img src="ttn-logo.webp" alt="" class="w-10 h-10 rounded-full object-cover">
-                <span>TTN <span class="text-ttnYellow">HR</span></span>
-            </a>
+            <div class="flex items-center gap-4">
+                <a href="#" class="text-2xl font-bold flex items-center gap-2">
+                    <img src="ttn-logo.webp" alt="" class="w-10 h-10 rounded-full object-cover">
+                    <span>TTN <span class="text-ttnYellow">HR</span></span>
+                </a>
+                <a href="https://timviec.vieclamhr.com"
+                    class="hidden lg:flex items-center gap-2 bg-red-600 text-white px-3 py-1 lg:px-4 lg:py-2 rounded-full font-bold shadow-lg hover:bg-red-700 transition-all transform hover:scale-105 shadow-red-600/20 hover:shadow-red-600/50 ml-2">
+                    <i class="fa-solid fa-fire animate-pulse text-yellow-300"></i>
+                    <span class="lang" key="menu_jobs">Tìm Việc</span>
+                </a>
+            </div>
 
             <div class="hidden lg:flex items-center gap-6 text-sm font-medium">
                 <a href="#about" class="hover:text-ttnYellow transition lang" key="menu_about">Về Chúng Tôi</a>
@@ -225,6 +237,9 @@
                 key="menu_services" onclick="toggleMobileMenu()">Dịch Vụ</a>
             <a href="#process" class="text-white hover:text-ttnYellow transition text-lg font-medium lang"
                 key="menu_process" onclick="toggleMobileMenu()">Quy Trình</a>
+            <a href="https://timviec.vieclamhr.com"
+                class="text-white hover:text-ttnYellow transition text-lg font-medium lang" key="menu_jobs"
+                onclick="toggleMobileMenu()">Tìm Việc</a>
             <a href="#contact" class="text-white hover:text-ttnYellow transition text-lg font-medium lang"
                 key="menu_contact" onclick="toggleMobileMenu()">Liên Hệ</a>
             <button onclick="toggleLanguage(); toggleMobileMenu()"
@@ -734,6 +749,9 @@
                     </li>
                     <li><a href="#process" class="hover:text-ttnYellow transition lang" key="menu_process">Quy Trình</a>
                     </li>
+                    <li><a href="https://timviec.vieclamhr.com" class="hover:text-ttnYellow transition lang"
+                            key="menu_jobs">Tìm Việc</a>
+                    </li>
                     <li><a href="#contact" class="hover:text-ttnYellow transition lang" key="menu_contact">Liên Hệ</a>
                     </li>
                 </ul>
@@ -770,6 +788,7 @@
                 menu_message: "Thông Điệp",
                 menu_services: "Dịch Vụ",
                 menu_process: "Quy Trình",
+                menu_jobs: "Tìm Việc",
                 menu_contact: "Liên Hệ",
 
                 hero_subtitle: "ĐỐI TÁC NHÂN SỰ TIN CẬY",
@@ -850,6 +869,7 @@
                 menu_message: "公司讯息",
                 menu_services: "服务项目",
                 menu_process: "流程",
+                menu_jobs: "找工作",
                 menu_contact: "联系我们",
 
                 hero_subtitle: "值得信赖的人力资源合作伙伴",
